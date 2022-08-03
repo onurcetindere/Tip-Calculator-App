@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png"  href="http://clipart-library.com/img/2090518.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"> 
+
+  <title>Tip calculator</title>
+<link rel="stylesheet" href="index.css">
+ 
+</head>
+<body>
+  <header>
+    <h1>SPLITTER</h1>
+</header>
+ 
+ 
+ <main>
+ 
+  <div class="container flow">
+    
+<div class="Bill">
+<h2 class="heads">Bill</h2>
+ <input class="bill interactive" type="input" value="10">
+
+</div>
+
+<div >
+  <h2>Select Tip</h2>
+  <div class="tips">
+  <p class="tip" value="0.5">5%</p>
+  <p class="tip" value="0.1">10%</p>
+  <p class="tip" value="0.15">15%</p>
+  <p class="tip" value="0.20">20%</p>
+  <p class="tip" value="0.25">25%</p>
+  <p class="tip"value="0.5">50%</p>
+</div>
+</div>
+
+
+<div class="n-of-p">
+ <h2 class="heads">Number of People</h2>
+ <select class="interactive">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+ </select>
+</div>
+
+
+ <div class="amount Very-dark-cyan" style="font-size:0.7rem">
+ <div class="amounts">
+  <div class="amount-row">
+  <p style="color:white">Tip Amount <span class="inline">/person</span></p>
+  <p  id="tip-amount" style="color:var(--Strong-cyan);font-size:2rem">$4.27</p>
+</div>
+
+<div class="amount-row">
+  <p style="color:white">Total <span class="inline">/person</span></p>
+  <p id="total" style="color:var(--Strong-cyan);font-size:2rem">$32.79</p>
+</div>
+</div>
+ <button  class="Strong-cyan"  id="reset-button">RESET</button>
+</div>
+
+
+</main>
+<script src="index.js"></script>
+</body>
+</html>
